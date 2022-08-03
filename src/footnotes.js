@@ -52,7 +52,7 @@ function renderFootnotes(text) {
     // render (HTML) footnotes reference
     text = text.replace(reFootnoteIndex,
         function(match, index){
-            var tooltip = md.renderInline(indexMap[index].content.trim());
+            var tooltip = indexMap[index].content;
             return '<sup id="fnref:' + index + '">' +
                 '<a href="#fn:'+ index +'" rel="footnote">' +
                 '<span class="hint--medium" aria-label="'
