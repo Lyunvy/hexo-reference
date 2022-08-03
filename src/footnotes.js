@@ -56,7 +56,7 @@ function renderFootnotes(text) {
             return '<sup id="fnref:' + index + '">' +
                 '<a href="#fn:'+ index +'" rel="footnote">' +
                 '<span class="hint--medium" aria-label="'
-                + tooltip +
+                + md.renderInline(tooltip) +
                 '">[' + index +']</span></a></sup>';
         });
 
