@@ -10,7 +10,7 @@ hexo.extend.filter.register('before_post_render', function(data) {
 // Add CDN CSS resources
 hexo.extend.filter.register('after_post_render', function(data) {
   data.content =
-      util.htmlTag('link', {rel: 'stylesheet', type: 'text/css', href: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/hint.css/2.7.0/hint.min.css'}) +
+      util.htmlTag('link', {rel: 'stylesheet', type: 'text/css', href: 'https://fastly.jsdelivr.net/npm/hint.css/hint.min.css'}) +
       data.content;
   return data;
 });
